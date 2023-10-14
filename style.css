@@ -772,7 +772,7 @@ body::selection {
   background-color: #2d2e3273;
   box-shadow: 0 0 10px 1px #00000040;
   backdrop-filter: blur(15px);
-  background-image: url(assets/email-background.png);
+  background-image: url(https://lh3.googleusercontent.com/pw/ADCreHeKVFnZbyY1o17lgOjDAEYpSqi23ycYVKUdvU1vJdBZfIkv8v1111yUW3G3kMeaZ6GKvQu2w5QQaArxfrENDrMX_Oet23q3cC__6B0b-yZt-jFIYeGa=w2400);
   background-size: cover;
 }
 
