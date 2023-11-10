@@ -7,7 +7,26 @@
   font-family: "Raleway", sans-serif;
   font-family: "Source Code Pro", monospace;
 }
+/* Add this at the end of your existing CSS */
 
+/* Styles for desktop/laptop screens */
+/* Styles for desktop/laptop screens */
+
+/* Styles for mobile screens */
+#mobile-message {
+  display: none; /* Hide the element by default */
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  body > *:not(#mobile-message) {
+    display: none; /* Hide all direct children of body except #mobile-message on mobile devices */
+  }
+
+  #mobile-message {
+    display: block; /* Display the element for screens up to 767 pixels wide (typical mobile devices) */
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -84,25 +103,23 @@ body::selection {
   background: #64f4ac;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
-  background: #CACACA;
+::-webkit-scrollbar-thumb {
+  background: #cacaca;
   transition: 0.3s ease;
   border-radius: 15px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background: #FEFEFE;
+::-webkit-scrollbar-thumb:hover {
+  background: #fefefe;
 }
-
-
 
 /* ---------- SECTION HEADER ---------- */
 #header {
@@ -508,7 +525,7 @@ body::selection {
 }
 
 .project-card-3 {
-  background: linear-gradient(225deg, #01403A, #025951);
+  background: linear-gradient(225deg, #01403a, #025951);
 }
 
 .project-card .title {
@@ -554,7 +571,7 @@ body::selection {
   transition: 0.3s ease-in-out;
 }
 
-.project-card:hover .project-img-1{
+.project-card:hover .project-img-1 {
   transform: scale(1.6) rotate(-5deg);
 }
 
@@ -674,7 +691,7 @@ body::selection {
   position: relative;
   top: -100px;
   left: 1000px;
-  color: #FFFFFF40;
+  color: #ffffff40;
   font-size: 60px;
   margin: 0;
   padding: 0;
@@ -730,7 +747,7 @@ body::selection {
   text-decoration: none;
 }
 
-.single-profile-card div p a:hover{
+.single-profile-card div p a:hover {
   text-decoration: underline;
 }
 
@@ -820,7 +837,7 @@ body::selection {
 }
 
 .email-form div button:hover {
-  background-color: #45A877;
+  background-color: #45a877;
 }
 
 .footer-title {
@@ -849,13 +866,13 @@ body::selection {
 .footer-email-intro h6 {
   font-size: 18px;
   font-weight: 400;
-  color: #7C7D81;
+  color: #7c7d81;
   margin-top: 10px;
 }
 
 .footer-email-intro h3 {
   font-size: 26px;
-  color: #FFF;
+  color: #fff;
   font-weight: 400;
   margin: 10px 0;
 }
@@ -896,7 +913,7 @@ body::selection {
 }
 
 .social-icons a i {
-  color: #FFF;
+  color: #fff;
   margin: 0 5px;
   transition: 0.3s ease;
   cursor: pointer;
@@ -916,10 +933,40 @@ body::selection {
 
 .social-icons a:nth-child(5) i:hover {
   color: transparent;
-  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -o-radial-gradient(
+    30% 107%,
+    circle,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   background-clip: text;
   -webkit-background-clip: text;
 }
